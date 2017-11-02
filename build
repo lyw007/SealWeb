@@ -1,0 +1,36 @@
+#!/bin/bash
+
+set -o errexit
+set -o nounset
+
+hg pull --rev default
+hg update --clean --rev default
+hg purge
+
+PROFILE=prod
+VERSION_FILE=src/main/resources/version.txt
+MANIFEST_FILE=src/main/resources/manifest.txt
+
+if [ -e "$VERSION_FILE" ]; then
+    echo "Error: $VERSION_FILE exists"
+    exit 1
+fi
+if [ -e "$MANIFEST_FILE" ]; then
+    echo "Error: $MANIFEST_FILE exists"
+    exit 1
+fi
+
+if [ "$PROFILE" = 'prod' -a "$(hg branch)" != 'default' ]; then
+    echo "Error: cannot build non-default branch in prod"
+    exit 2
+fi
+
+echo "Writing Mercurial manifest..."
+hg parents --template '{node}\n\n' > "$MANIFEST_FILE"
+hg diff --nodates >> "$MANIFEST_FILE"
+
+echo "Run maven on $HOSTNAME using $PROFILE profile"
+mvn -U -Dmaven.test.skip=true -P $PROFILE clean package
+
+rm "$VERSION_FILE"
+rm "$MANIFEST_FILE"

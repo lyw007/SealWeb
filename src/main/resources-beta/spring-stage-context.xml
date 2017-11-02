@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    <bean id="dataSource" parent="dataSourceBase">
+        <property name="jdbcUrl" value="jdbc:postgresql://192.168.6.56:9999/pp100_seal" />
+        <property name="user" value="seal_rw" />
+        <property name="password" value="pp100-seal-dev" />
+    </bean>
+</beans>

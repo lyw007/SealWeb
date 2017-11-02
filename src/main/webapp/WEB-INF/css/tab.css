@@ -1,0 +1,63 @@
+*{ margin: 0; padding: 0; font-family: "微软雅黑"; }
+.comWin { width: 1200px; overflow: hidden; height: auto; margin: 0 auto; }
+.contmanage { width: 100%; height: auto; margin: 0 auto; overflow: hidden; }
+.contmanage .contmanageTop { width: 100%; height: 176px; line-height: 176px; background:url("/images/top_banner.jpg") no-repeat center top; text-align: center; }
+.contmanage .contmanageTop h2 { font-size: 40px; color: #fff; font-weight: normal; }
+.contmanage .tabCont-title { margin: 64px auto 0; overflow: hidden; }
+.contmanage .tabCont-title .tabIcon { width: 543px; height: auto; border: 1px solid #dbdbdb; overflow: hidden; margin:0 auto; }
+.contmanage .tabCont-title span { width: 180px; float: left; height: 42px; line-height: 42px; text-align: center; border-right: 1px solid #dbdbdb; cursor: pointer; font-size: 16px; color: #000; }
+.contmanage .tabCont-title p { width: 500px; height: 30px; line-height: 30px; font-size: 16px; text-align: center; text-align: center; margin: 20px auto 0; color: #999; }
+.contmanage .tabCont-title span i { font-size: 18px; font-style: normal; padding:0 2px; }
+.contmanage .tabCont-title span.active { background: #54c5c9; color: #fff; }
+.contmanage .tabCont-cont { width: 100%; height: auto; margin: 64px auto 0; display: block; }
+.contmanage .tabCont-cont .rowDiv { width: 100%; height: auto; margin: 0 auto ; overflow: hidden; }
+.contmanage .tabCont-cont .rowDiv .tdDiv { float: left; width: 600px; margin-bottom:20px; }
+.contmanage .tabCont-cont .nameInfo { width: 240px; height: auto; float: left; }
+.contmanage .tabCont-cont .nameInfo h2 { width: 100%; height: 36px; line-height: 36px; display: block; text-align: right; font-size: 16px; }
+.contmanage .tabCont-cont .nameInfo p { width: 100%; height: 20px; line-height: 20px; display: block; text-align: right; font-size: 14px; color: #999; }
+.contmanage .tabCont-cont .textInfo { height: auto; float: left; }
+.contmanage .tabCont-cont .textInfo .text { width: 284px; height: 14px; padding: 10px; margin-left: 10px; border: 1px solid #dbdbdb; font-size: 14px; color: #666; float: left;}
+.contmanage .tabCont-cont .textInfo .short { width: 100px; }
+.contmanage .tabCont-cont .textInfo p { font-size: 16px; font-weight: bold; color: #000; float: left; line-height: 30px; margin-left:10px; }
+.contmanage .tabCont-cont .btnDiv { width: 1200px; height: auto; margin: 40px auto 0; }
+.contmanage .tabCont-cont .btnDiv a { width: 260px; height: 56px; display: block; margin: 0 auto; overflow: hidden; text-align: center; line-height: 56px; text-decoration: none; background: #5ac7ca; border-radius: 5px; color: #fff; }
+.contmanage .tabCont-cont .btnDiv a:hover { background: #4bbdc0; }
+.contmanage .foot { width: 100%; height: 140px; overflow: hidden; background: #5ac7ca; margin: 80px auto 0; text-align: center; overflow: hidden; }
+.contmanage .foot p { color: #fff; font-size: 14px; line-height: 140px; }
+
+/*下拉*/ 
+.newSelect { position:relative; border:1px solid #dbdbdb; padding:10px; height: 14px; background:#fff; width:100%; } 
+.select { position:relative; width:284px; z-index:0; margin-left: 10px; border:1px}
+.select .select { position:relative; border:1px solid #dbdbdb; padding:10px; height: 14px; background:#fff; width:100%; font-size: 14px; line-height: 14px; }
+.select .selectInput i { display:block; position:absolute; right:10px; top:10px; background:url("/images/triangle.png") center center no-repeat; width:14px; height:14px; }
+.select .selectList { position:absolute; border:1px solid #ccc; width:100%; padding:1px; margin-top:-1px; cursor:default; font-family:"微软雅黑"; background:#fff; padding: 0 10px; z-index: 102; }
+.select .selectList ul li { height:30px; line-height:30px; padding-left:2px; overflow:hidden; font-size: 14px; }
+.select .selectList ul li:hover { background: #0d7cd7; color:#fff; }
+
+/*弹窗*/ 
+.contmanageBg { background: #000; top: 0; right: 0; bottom: 0; left: 0; position: fixed; opacity: 0.6; filter:alpha(opacity: 60); z-index: 99; }
+.contmanagePop { width: 740px; height: 520px; position: fixed; z-index: 101; background: #fff; left: 50%; top: 50%; margin-left: -370px; margin-top:-260px;}
+.contmanagePop .title { height: 50px; width: 100%; background: #e7e7e7; text-align: center; line-height: 50px; margin: 0 auto; }
+.contmanagePop .title h2 { font-weight: normal; font-size:24px; color: #000; }
+.contmanagePop .title a { width: 40px; height: 40px; position: absolute; right: 0; top: 0; }
+.contmanagePop .connt { width: 100%; height: auto; margin: 10px auto 0; }
+.contmanagePop .wordInfo { width: 100%; height: auto; overflow: hidden; margin: 0 auto; text-align: center }
+.contmanagePop .wordInfo h3 { font-weight: normal; font-size: 16px; color: #333; line-height: 30px; }
+.contmanagePop .wordInfo p { font-size: 14px; color: #999; line-height: 30px; }
+.contmanagePop .table { width: 635px; height: auto; margin: 20px auto 0; border-top: 1px solid #bdbdbd; border-left: 1px solid #bdbdbd; }
+.contmanagePop .table .rowDiv { width: 100%; height: 34px; line-height: 34px; border-bottom: 1px solid #dbdbdb; }
+.contmanagePop .table .rowDiv .tdDiv { border-right: 1px solid #dbdbdb; float: left; text-align: center }
+.contmanagePop .table .rowDiv .tdDiv p { font-size: 14px; color: #666; }
+.contmanagePop .table .rowDiv .tdDiv span { float: left; font-size: 14px; color: #666; }
+.contmanagePop .table .rowDiv .tdDiv span var { font-style: normal; padding: 0 10px; color: #000; }
+.contmanagePop .table .heardDiv .tdDiv p { font-size: 16px; color: #000; }
+.contmanagePop .table .rowDiv .tdDiv01 { width: 50px; }
+.contmanagePop .table .rowDiv .tdDiv02 { width: 250px; }
+.contmanagePop .table .rowDiv .tdDiv03 { width: 327px; } 
+.contmanagePop .table .select { width: 150px; float: left; margin: 0 30px 0 20px; }
+.contmanagePop .table .select .selectInput { padding: 5px; }
+.contmanagePop .table .select .selectInput i { top: 5px; }
+.contmanagePop .table .select .selectList { padding: 0 5px; }
+.contmanagePop .table .btn { width: 100%; height: auto; margin:0 auto; overflow: hidden; }
+.contmanagePop .btn a { width: 140px; height: 36px; border:1px solid #666; background:#dbdbdb; text-align: center; line-height: 36px; border-radius: 3px; text-align: center; display: block; text-decoration: none; color: #000; font-size: 16px; margin:10px auto 0;}
+.contmanagePop .btn a:hover { background: #d3d2d2; }
